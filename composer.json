@@ -1,0 +1,11 @@
+{
+    "require": {
+        "jjgrainger/wp-custom-post-type-class": "^1.4",
+        "stoutlogic/acf-builder": "^1.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wor\\": "app/"
+        }
+    }
+}
