@@ -1,4 +1,6 @@
 {
+    "name": "kshevitskiy/jkd-plugin",
+    "description": "Dependency plugin for Jan Duda website",
     "require": {
         "jjgrainger/wp-custom-post-type-class": "^1.4",
         "stoutlogic/acf-builder": "^1.8"
