@@ -1,7 +1,9 @@
 {
     "name": "kshevitskiy/jkd-plugin",
     "description": "Dependency plugin for Jan Duda website",
+    "type": "wordpress-plugin",   
     "require": {
+        "php": ">=7.0",
         "jjgrainger/wp-custom-post-type-class": "^1.4",
         "stoutlogic/acf-builder": "^1.8"
     },
