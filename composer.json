@@ -1,6 +1,6 @@
 {
     "name": "kshevitskiy/jkd-plugin",
-    "description": "Dependency plugin for Jan Duda website",
+    "description": "Plugin for Jan Duda website",
     "type": "wordpress-plugin",   
     "require": {
         "php": ">=7.0",
