@@ -10,6 +10,8 @@ use Wor\View\View;
 use Wor\Models\Event;
 use Wor\Models\Achievement;
 
+use Wor\API\Events;
+
 /**
  * The file that defines the core plugin class
  *
@@ -141,6 +143,10 @@ class App {
 		$achievement = new Achievement();
 		
 		$plugin_admin = new Admin( $this->get_plugin_name(), $this->get_version() );
+		$events_api = new Events( $this->get_plugin_name(), $this->get_version() );
+
+		$this->loader->add_action( 'rest_api_init', $events_api, 'past_events' );
+		$this->loader->add_action( 'rest_api_init', $events_api, 'upcomimng_events' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 		$this->loader->add_action( 'init', $plugin_admin, 'enqueue_acf' );
