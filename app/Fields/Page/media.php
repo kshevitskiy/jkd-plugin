@@ -25,16 +25,16 @@ $builder
   ->addAccordion('press_pack', [
       'label' => __('Press Pack')
     ])
-    ->addFields($importer->get_partial('partials.media.press-pack'))
+    ->addFields($importer->get_partial('partials.media.press-pack'));
 
-  ->addAccordion('contact_person', [
-      'label' => __('Contact Person')
-    ])
-    ->addFields($importer->get_partial('partials.media.contact-person'))
+  // ->addAccordion('contact_person', [
+  //     'label' => __('Contact Person')
+  //   ])
+  //   ->addFields($importer->get_partial('partials.media.contact-person'))
 
-  ->addAccordion('contact_form', [
-      'label' => __('Contact Form')
-    ])
-    ->addFields($importer->get_partial('partials.media.contact-form'));
+  // ->addAccordion('contact_form', [
+  //     'label' => __('Contact Form')
+  //   ])
+  //   ->addFields($importer->get_partial('partials.media.contact-form'));
 
 return $builder;
